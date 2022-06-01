@@ -1,0 +1,9 @@
+version: '3'
+services:
+  party-button:
+    image: "yourrepo/party-button:latest"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:80
